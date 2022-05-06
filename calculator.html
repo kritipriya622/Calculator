@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doing CSS like 2005</title>
+<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+<div class="container">
+<div class="cal">
+<div class="row">
+<div class="screen">
+                    0
+</div>
+</div>
+<div class="row">
+<button onclick="(() => {document.querySelector('.screen').innerText+='1'})()" class="one">1</button>
+<button onclick="(() => {document.querySelector('.screen').innerText+='2'})()" class="two" >2</button>
+<button onclick="(() => {document.querySelector('.screen').innerText+='3'})()" class="three">3</button>
+<button onclick="(() => {document.querySelector('.screen').innerText+='+'})()" class="plus">+</button>
+</div>
+<div class="row">
+<button onclick="(() => {document.querySelector('.screen').innerText+='4'})()" class="four">4</button>
+<button onclick="(() => {document.querySelector('.screen').innerText+='5'})()" class="five">5</button>
+<button onclick="(() => {document.querySelector('.screen').innerText+='6'})()" class="six">6</button>
+<button onclick="(() => {document.querySelector('.screen').innerText+='-'})()" class="minus">-</button>
+</div>
+<div class="row">
+<button onclick="(() => {document.querySelector('.screen').innerText+='7'})()" class="seven">7</button>
+<button onclick="(() => {document.querySelector('.screen').innerText+='8'})()" class="eight">8</button>
+<button onclick="(() => {document.querySelector('.screen').innerText+='9'})()" class="nine">9</button>
+<button onclick="(() => {document.querySelector('.screen').innerText+='*'})()" class="mul">*</button>
+</div>
+<div class="row">
+<button onclick="(() => {document.querySelector('.screen').innerText+='0'})()" class="zero">0</button>
+<button onclick="(() => {document.querySelector('.screen').innerText=''})()" class="clear">C</button>
+<button onclick="(() => {document.querySelector('.screen').innerText=eval(document.querySelector('.screen').innerText)})()" class="eql">=</button>
+<button onclick="(() => {document.querySelector('.screen').innerText=Math.sin((document.querySelector('.screen').innerText)*Math.PI/180)})()" class="sin">sin</button>
+</div>
+<div class="row">
+<button onclick="(() => {document.querySelector('.screen').innerText=Math.cos(document.querySelector('.screen').innerText)})()" class="cos">cos</button>
+<button onclick="(() => {document.querySelector('.screen').innerText=Math.tan(document.querySelector('.screen').innerText)})()" class="tan">tan</button>
+<button onclick="(() => {document.querySelector('.screen').innerText=Math.sqrt(document.querySelector('.screen').innerText)})()" class="Sqrt`">&#8730</button>
+</div>
+</div>
+</div>
+</body>
+</html>
+ 
