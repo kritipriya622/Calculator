@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.screen{
+    height: 40px;
+    margin-top:40px;
+    margin-bottom:20px;
+    background-color: gradient(rgb(153, 34, 189),#380add);
+    color:white;
+    font-size:larger;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right:10px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border-radius: 50px;
+    box-shadow: inset 20px 20px 60px rgb(153, 34, 189),
+            inset -20px -20px 60px #380add;
+}
+.cal .row {
+    margin-bottom: 10px;
+    color: rgb(39, 39, 39);
+}
+button{
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border:none;
+    border-radius: 50px;
+background: #f5f4f4;
+box-shadow:  2px 2px 6px #e4e3e3,-2px -2px 6px #ffffff;
+
+}
+button:hover{
+    background: rgb(153, 34, 189);
+}
+ 
